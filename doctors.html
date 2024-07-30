@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body  style="font-family: 'Barlow', sans-serif;">
+<nav class="sm:hidden fixed top-0 w-full z-30 bg-white">
+    <div class="text-right text-2xl p-4 flex items-center justify-between">
+        <i id="menu-icon" class="fa-solid fa-bars hover:text-blue-400 cursor-pointer"></i>
+        <img id="nav-logo" src="./assets/valleyCareLogo.png" class="h-8" alt="logo">
+        <i id="nav-phone" class="fa-solid fa-phone"></i>
+    </div>
+    <div id="menu" class="fixed inset-0 bg-white hidden flex flex-col justify-between">
+        <div class="flex justify-between items-center p-4">
+            <i id="close-menu" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col items-center justify-center gap-8 px-4 py-2 flex-grow min-h-[67%]">
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+                <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+        <div class="bg-gray-200 text-[22px] p-4 text-center md:text-right">
+            <ul>
+                <li class="text-blue-500 hover:text-blue-400 transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   <header class="hidden relative container   bg-white/95 py-4 px-8 sm:flex flex-wrap md:align-items-center  md:justify-between place-items-center justify-center mx-auto mt-20 sm:mt-0">
+        <div class="bg-[url('./assets/icon.png')] bg-cover bg-center absolute top-0 right-0 h-full w-full -z-20"></div>
+        <div class="w-56 md:w-80">
+            <img class="w-full" src="./assets/valleyCareLogo.png" alt="logo">
+        </div>
+        <div class=" text-[22px]">
+            <ul class=" text-center md:text-right ">
+                <li class="text-blue-500 hover:text-blue-400  transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                 <li class=" hover:text-blue-400  transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                 <li class=" hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <nav class=" sticky top-0 py-4 shadow-t shadow-b bg-white shadow-md hidden sm:block  z-50">
+        <ul class="flex flex-wrap align-items-center justify-center gap-8 mx-4">
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+            <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+    </nav>
+<!--  -->
+     <section class=" mt-14 sm:mt-0 text-center bg-gray-200 h-[143px] grid place-items-center">
+        <h4 class="text-[36px] font-semibold ">WHO TO REFER TO</h4>
+    </section>
+    <!-- team -->
+<section id="modal" class="container mx-auto p-2 md:px-12 doctor-container flex flex-wrap justify-evenly gap-4 md:my-20">
+    <!-- 1 -->
+    <div class="p-1 max-w-48 text-center leading-9">
+        <img src="./assets/doctor1.jpg" class="max-w-48 md:max-w-[120px] sm:max-w-[150px] lg:max-w-[200px] w-full" alt="">
+        <h3 class="text-[28px] sm:text-[30px] mt-3">DR DANIELLE (DAINI) ONG</h3>
+        <ul class="text-[22px] sm:text-[24px] list-disc leading-7 my-3 px-3">
+            <li>Practice Director</li>
+            <li>Cataract surgeon</li>
+            <li>Medical retinal specialist</li>
+            <li>General ophthalmology</li>
+        </ul>
+        <button id="doctor1" class="bg-blue-500 py-1 w-full text-[16px] sm:text-[18px] text-white hover:bg-blue-600 transition-all duration-200">Read Bio</button>
+    </div>
+    <!-- 2  -->
+    <div class="p-1 max-w-48 text-center leading-9">
+        <img src="./assets/doctor2.jpg" class="max-w-48 md:max-w-[120px] sm:max-w-[150px] lg:max-w-[200px] w-full" alt="">
+        <h3 class="text-[28px] sm:text-[30px] mt-3">DR WENG NG</h3>
+        <ul class="text-[22px] sm:text-[24px] list-disc leading-7 my-3 px-3">
+            <li>Cataract surgeon</li>
+            <li>Glaucoma specialist</li>
+            <li>General ophthalmology</li>
+        </ul>
+        <button id="doctor2" class="bg-blue-500 py-1 w-full text-[16px] sm:text-[18px] text-white hover:bg-blue-600 transition-all duration-200">Read Bio</button>
+    </div>
+    <!--  3-->
+    <div class="p-1 max-w-48 text-center leading-9">
+        <img src="./assets/doctor3.jpg" class="max-w-48 md:max-w-[120px] sm:max-w-[150px] lg:max-w-[200px] w-full" alt="">
+        <h3 class="text-[28px] sm:text-[30px] mt-3">DR RAHGU KINI</h3>
+        <ul class="text-[22px] sm:text-[24px] list-disc leading-7 my-3 px-3">
+            <li>Cataract surgeon</li>
+            <li>Paediatrics</li>
+            <li>Neuro-ophthalmology</li>
+            <li>General ophthalmology</li>
+        </ul>
+        <button id="doctor3" class="bg-blue-500 py-1 w-full text-[16px] sm:text-[18px] text-white hover:bg-blue-600 transition-all duration-200">Read Bio</button>
+    </div>
+    <!-- 4 -->
+    <div class="p-1 max-w-48 text-center leading-9">
+        <img src="./assets/doctor4.jpg" class="max-w-48 md:max-w-[120px] sm:max-w-[150px] lg:max-w-[200px] w-full" alt="">
+        <h3 class="text-[28px] sm:text-[30px] mt-3">DR MICHAEL CHEN</h3>
+        <ul class="text-[22px] sm:text-[24px] list-disc leading-7 my-3 px-3">
+            <li>Cataract surgeon</li>
+            <li>Medical retinal specialist</li>
+            <li>General ophthalmology</li>
+        </ul>
+        <button id="doctor4" class="bg-blue-500 py-1 w-full text-[16px] sm:text-[18px] text-white hover:bg-blue-600 transition-all duration-200">Read Bio</button>
+    </div>
+    <!-- 5 -->
+    <div class="p-1 max-w-48 text-center leading-9">
+        <img src="./assets/doctor5.jpg" class="max-w-48 md:max-w-[120px] sm:max-w-[150px] lg:max-w-[200px] w-full" alt="">
+        <h3 class="text-[28px] sm:text-[30px] mt-3">DR HIMANSHU SOLANKI</h3>
+        <ul class="text-[22px] sm:text-[24px] list-disc leading-7 my-3 px-3">
+            <li>Cataract surgeon</li>
+            <li>Corneal specialist</li>
+            <li>General ophthalmology</li>
+        </ul>
+        <button id="doctor5" class="bg-blue-500 py-1 w-full text-[16px] sm:text-[18px] text-white hover:bg-blue-600 transition-all duration-200">Read Bio</button>
+    </div>
+</section>
+
+
+     <!-- modal 1-->
+      <section id="modal1" class="fixed top-0 right-0 w-full h-full bg-[#ffffff32] z-50 grid place-items-center modal hidden">
+        <div class="h-[95%] w-[80%] bg-white  p-2 rounded-md modal-content">
+            <div class="text-2xl text-right h-10"><i class="fa-solid fa-xmark "></i></div>
+            <aside>
+                <h2>Dr Danielle (Daini) Ong</h2>
+                <p>&nbsp;</p>
+                <p>Dr Danielle Ong is an ophthalmologist with a special interest in cataract surgery and the management of macular degeneration. She offers medical consultation and surgery for a wide range of general ophthalmic conditions.</p>
+                <p>&nbsp;</p>
+                <p>Cataract surgery is about improving your vision as well as making choices to suit your lifestyle. She will guide you through the choices of the latest interocular lens available. She operates in surgical centres with the latest equipment and caring staff. Dr Ong keeps up to date with the latest innovations in cataract surgery.</p>
+                <p>&nbsp;</p>
+                <p>Dr Ong is also a retinal specialist who has performed thousands of anti-VEGF injections for macular degeneration and other retinal diseases. She has helped many patients to improve and maintain their vision.</p>
+                <p>&nbsp;</p>
+                <p>Dr Ong graduated with honours from Monash University Medical School, Melbourne. She then worked at The Austin Hospital, Melbourne where she received "The Best Hospital Medical Officer Teacher Award".</p>
+                <p>&nbsp;</p>
+                <p>After completing her ophthalmology training at The Royal Victorian Eye and Ear Hospital, Melbourne, she worked in the UK for two years and did further training in medical retina and uveitis conditions at the prestigious Moorfields Hospital, London.</p>
+                <p>&nbsp;</p>
+                <p>She undertook further training in glaucoma and oculoplastics at The Royal Devon and Exeter Hospital. Other fellowship training included cataract surgery at The Royal Victorian Eye and Ear Hospital, Melbourne. She is a member of the Royal Australian and New Zealand College of Ophthalmologists.</p>
+                <p>&nbsp;</p>
+                <p>Dr Ong describes herself as approachable and ethical. She always has her patients’ best interests in mind. She says, “It brings me joy to see my patients’ eyesight improve, so they can enjoy doing the things that are important to them.</p>
+                <p>&nbsp;</p>
+                <p>Dr Ong is committed to provide a specialist eye service to the Latrobe region. She has a residence in Traralgon. She established ValleyCare Eye Doctors in 2020 after Dr Jillian Whitney retired. The established site has been serving the local community for three decades.</p>
+            </aside>
+        </div>
+      </section>
+      <!-- 2 -->
+      <section id="modal2" class="fixed top-0 right-0 w-full h-full bg-[#ffffff32] z-50 grid place-items-center modal hidden">
+        <div class="h-[95%] w-[80%] bg-white  p-2 rounded-md modal-content">
+            <div class="text-2xl text-right h-10"><i class="fa-solid fa-xmark "></i></div>
+            <aside>
+                <h2>DR WENG NG</h2>
+                <p>&nbsp;</p>
+                <p>Dr Weng Ng is an eye surgeon with a subspecialty interest in cataract surgery and glaucoma surgery. He is also an adult comprehensive ophthalmologist. He has been serving the Gippsland community since 2010, performing both private and public cataract surgery at Neerim South Hospital.</p>
+                <p>&nbsp;</p>
+                <p>Weng graduated from The University of Melbourne with an Honours degree in 1999. He was the recipient of the RANZCO Undergraduate Ophthalmology Prize for Victoria, Keith Levi Memorial Scholarship for Medicine and RD Wright Prize for Physiology. He completed a Master in Public Health at James Cook University before starting his RANZCO Registrar training at Sydney Eye Hospital and Prince of Wales Hospital. That was followed by a Glaucoma and Anterior Segment Fellowship in Perth where he performed complex cataract surgery, glaucoma surgery and anterior segment surgery. He published multiple articles in international journals during and after his training.
+
+</p>
+                <p>&nbsp;</p>
+                <p>Weng was a consultant at the Royal Victorian Eye and Ear Hospital and The Alfred Hospital. He was actively involved in the teaching of trainee ophthalmologists and optometrists, including presentations at the Australian College of Optometrists. He is currently in private practice at Eye Surgery Associates (Doncaster, Vermont South and Cabrini Malvern) and Southern Eye Centre in Frankston. </p>
+               
+            </aside>
+        </div>
+      </section>
+      <!-- 3 -->
+      <section id="modal3" class="fixed top-0 right-0 w-full h-full bg-[#ffffff32] z-50 grid place-items-center modal hidden">
+        <div class="h-[95%] w-[80%] bg-white  p-2 rounded-md modal-content">
+            <div class="text-2xl text-right h-10"><i class="fa-solid fa-xmark "></i></div>
+            <aside>
+                <h2>DR RAHGU KINI</h2>
+                <p>&nbsp;</p>
+                <p>Dr Raghuvir Kini is a highly trained and experienced ophthalmologist. In addition to managing all general ophthalmic conditions and complex adult cataracts, Dr Kini has sub-specialist interests in paediatric ophthalmology, strabismus and neuro-ophthalmology. He is one of the few ophthalmologists in the world to be fellowship trained in all these sub-specialties.
+
+</p>
+                <p>&nbsp;</p>
+                <p>Dr Kini completed his basic medical and ophthalmology training in India, before moving to the UK after being awarded the prestigious ICO fellowship in neuro-ophthalmology at Leicester Royal Infirmary. Upon his return to India, he had a high-volume cataract, paediatric and neuro-ophthalmology private practice in Bangalore, in addition to public appointments in these sub-specialties. After working as a consultant ophthalmologist for 3 years in India, Dr Kini moved to Melbourne to complete a fellowship in complex strabismus at the Royal Victorian Eye and Ear Hospital, followed by a fellowship in Paediatric Ophthalmology at the Royal Children’s Hospital.
+
+</p>
+                <p>&nbsp;</p>
+                <p>Dr Kini has had extensive and varied experience in general ophthalmology and his chosen sub-specialties spanning 13 years and 3 countries, and he brings this wealth of experience to his practice. He loves working with children and is particularly good at making children comfortable with ocular examination techniques using modern technology and gadgets, which makes an eye exam a pleasant experience.</p>
+                <p>&nbsp;</p>
+                <p>Dr Kini has presented his work at various national and international meetings and has many peer-reviewed publications to his name. He has been involved with training young surgeons in laser, strabismus and cataract surgery for the past 7 years. He is involved in training the Advanced Cataract Fellow at the Royal Victorian Eye and Ear Hospital, Melbourne in managing difficult cataract surgery in adults.</p>
+                <p>&nbsp;</p>
+                <p>In addition to his private practice in Frankston and Dandenong, Dr Kini has public appointments at The Royal Victorian Eye and Ear Hospital and Monash Health.</p>
+                <p>&nbsp;</p>
+                <p>In his spare time, Dr Kini loves reading, listening to music and taking his family on long drives to beautiful places.</p>
+                
+              
+            </aside>
+        </div>
+      </section>
+      <!-- 4 -->
+      <section id="modal4" class="fixed top-0 right-0 w-full h-full bg-[#ffffff32] z-50 grid place-items-center modal hidden">
+        <div class="h-[95%] w-[80%] bg-white  p-2 rounded-md modal-content">
+            <div class="text-2xl text-right h-10"><i class="fa-solid fa-xmark "></i></div>
+            <aside>
+                <h2>DR MICHAEL CHEN</h2>
+                <p>&nbsp;</p>
+                <p>Dr Chen is available for all general ophthalmology appointments for adults including cataract surgery, screening and treatment of diabetes, glaucoma and macular degeneration.</p>
+                <p>&nbsp;</p>
+                <p>Michael grew up in Melbourne, graduating dux of Melbourne High School, received his medical degree from Melbourne University, and spent his junior doctor training at Royal Melbourne Hospital.</p>
+                <p>&nbsp;</p>
+                <p>He completed his ophthalmology training at the Royal Victorian Eye and Ear Hospital followed by a first fellowship in cataract/general ophthalmology where he perfected his surgical skills to a high level. This was followed by a second fellowship in medical retina, treating conditions such as diabetic retinopathy and macular degeneration.</p>
+                <p>&nbsp;</p>
+                <p>He is committed to his continuing professional education, attending weekly clinical meetings and numerous conferences every year. In his 10 years of experience as an eye doctor, he has always been up-to-date with the most recent advances in medical technology and surgical techniques.</p>
+                <p>&nbsp;</p>
+                <p>Michael has great compassion and rapport with his patients and is dedicated to serving the local community with high-quality eye care.</p>
+               
+               
+               
+            </aside>
+        </div>
+      </section>
+      <!-- 5 -->
+      <section id="modal5" class="fixed top-0 right-0 w-full h-full bg-[#ffffff32] z-50 grid place-items-center modal hidden">
+        <div class="h-[95%] w-[80%] bg-white  p-2 rounded-md modal-content">
+            <div class="text-2xl text-right h-10"><i class="fa-solid fa-xmark "></i></div>
+            <aside>
+                <h2>Dr HIMANSHU SOLANKI</h2>
+                <p>&nbsp;</p>
+                <p>Dr Himanshu Solanki is an experienced Ophthalmologist with specialty training in Cataract, Cornea, Refractive Surgery, and Medical Retina.</p>
+                <p>&nbsp;</p>
+                <p>He completed his initial medical schooling and Ophthalmology training in India where he worked as an Ophthalmologist before moving to Australia for further training. </p>
+                <p>&nbsp;</p>
+                <p>Dr Solanki first completed a two-year anterior segment (Cornea, Cataract, Glaucoma ) Fellowship at the Royal Adelaide Hospital, followed by a Cataract and Medical Retina Fellowship at Monash Health, Melbourne. He has then gone on to recently complete a Cornea Fellowship at the Royal Victorian Eye and Ear Hospital, Melbourne and a graduate diploma in Cataract and Refractive surgery from the University of Sydney. </p>
+                <p>&nbsp;</p>
+                <p>Dr Solanki is a visiting consultant and is actively involved in teaching the latest cataract surgery techniques to future colleagues at the Royal Victorian Eye and Ear Hospital and Monash Health. </p>
+                <p>&nbsp;</p>
+                <p>Professional Memberships: </p>
+                <ul>
+                    <li>- Fellow of the Royal Australian and New Zealand College of Ophthalmologists</li>
+                    <li>- Member, Australian Society of Ophthalmologists</li>
+                    <li>- Member, Australian Society of Cataract and Refractive Surgeons</li>
+                    <li>- Member, All India Society of Ophthalmologists </li>
+                </ul>
+              
+               
+            </aside>
+        </div>
+      </section>
+    <!--  -->
+    <footer class="bg-[#035c8a] text-white flex flex-col place-items-center gap-4 py-8">
+        <div >
+           <a href="index.html"> <img src="./assets/footer-logo.svg" class="w-[6rem] hover:scale-110 transition-all duration-200" alt=""></a>
+        </div>
+        <p class="text-[18px]"><span>&copy;</span> 2024 
+All Rights Reserved</p>
+<ul class="flex flex-wrap gap-2  sm:gap-4 place-items-center justify-center ">
+    <li class=" text-[16px] relative group break-all"><a href="#">ValleyCare Eye Docs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Privacy Policy</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Developed by Indigo Web</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+</ul>
+     </footer>
+
+       <script src="./app.js"></script>
+</body>
+</html>

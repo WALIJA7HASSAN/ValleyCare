@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body  style="font-family: 'Barlow', sans-serif;">
+<nav class="sm:hidden fixed top-0 w-full z-30 bg-white">
+    <div class="text-right text-2xl p-4 flex items-center justify-between">
+        <i id="menu-icon" class="fa-solid fa-bars hover:text-blue-400 cursor-pointer"></i>
+        <img id="nav-logo" src="./assets/valleyCareLogo.png" class="h-8" alt="logo">
+        <i id="nav-phone" class="fa-solid fa-phone"></i>
+    </div>
+    <div id="menu" class="fixed inset-0 bg-white hidden flex flex-col justify-between">
+        <div class="flex justify-between items-center p-4">
+            <i id="close-menu" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col items-center justify-center gap-8 px-4 py-2 flex-grow min-h-[67%]">
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] text-blue-400 relative group"><a href="about.html">ABOUT</a>
+                <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+        <div class="bg-gray-200 text-[22px] p-4 text-center md:text-right">
+            <ul>
+                <li class="text-blue-500 hover:text-blue-400 transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <header class="hidden relative container   bg-white/95 py-4 px-8 sm:flex flex-wrap md:align-items-center  md:justify-between place-items-center justify-center mx-auto mt-20 sm:mt-0">
+        <div class="bg-[url('./assets/icon.png')] bg-cover bg-center absolute top-0 right-0 h-full w-full -z-20"></div>
+        <div class="w-56 md:w-80">
+            <img class="w-full" src="./assets/valleyCareLogo.png" alt="logo">
+        </div>
+        <div class=" text-[22px]">
+            <ul class=" text-center md:text-right ">
+                <li class="text-blue-500 hover:text-blue-400  transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                 <li class=" hover:text-blue-400  transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                 <li class=" hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <nav class=" sticky top-0 py-4 shadow-t shadow-b bg-white shadow-md hidden sm:block ">
+        <ul class="flex flex-wrap align-items-center justify-center gap-8 mx-4">
+             <li class=" text-[20px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] text-blue-400 relative group"><a href="about.html">ABOUT</a>
+            <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+    </nav>
+<!--  -->
+    <aside class="about-content">
+        <p>ValleyCare Eye Doctors is the largest eye clinic in the Latrobe Valley, and has served the local area for over 30 years. Our team of experienced ophthalmologists specialise in diagnosing, managing and treating a wide range of eye conditions, right here in the Latrobe Valley, so you don’t have to travel far.</p>
+    </aside>
+
+<section class="container mx-auto">
+    <div class="flex sm:flex-row gap-6 flex-col place-items-center md:px-10">
+        <div class="flex-shrink-0 w-28 md:w-36">
+            <img src="./assets/aboutIcon4.svg" class="w-full" alt="">
+        </div>
+        <div class="p-4 text-center sm:text-left">
+            <h3 class="text-[28px] sm:text-[30px] font-semibold">Treatment and surgery performed locally</h3>
+            <p class="text-[22px] sm:text-[24px]">If you require surgical treatment, we can perform that locally eliminating the need for unnecessary travel.</p>
+        </div>
+    </div>
+    <div class="flex sm:flex-row gap-6 flex-col place-items-center md:px-10">
+        <div class="flex-shrink-0 w-28 md:w-36">
+            <img src="./assets/aboutIcon3.svg" class="w-full" alt="">
+        </div>
+        <div class="p-4 text-center sm:text-left">
+            <h3 class="text-[28px] sm:text-[30px] font-semibold">Highly experienced</h3>
+            <p class="text-[22px] sm:text-[24px]">All our eye specialists are qualified specialists registered with the Medical Board of Australia and the Royal Australian and New Zealand College of Ophthalmologists. They have undertaken extensive training to become experts in the field of cataracts, glaucoma, neuro-ophthalmology, macular degeneration, diabetic retinopathy and paediatrics. They are experienced in diagnosing, managing and treating a range of eye disorders.</p>
+        </div>
+    </div>
+    <div class="flex sm:flex-row gap-6 flex-col place-items-center md:px-10">
+        <div class="flex-shrink-0 w-28 md:w-36">
+            <img src="./assets/aboutIcon2.svg" class="w-full" alt="">
+        </div>
+        <div class="p-4 text-center sm:text-left">
+            <h3 class="text-[28px] sm:text-[30px] font-semibold">Outcome-focused</h3>
+            <p class="text-[22px] sm:text-[24px]">We use advanced technology and evidence-based treatments in order to achieve the best outcomes for all our patients.</p>
+        </div>
+    </div>
+    <div class="flex sm:flex-row gap-6 flex-col place-items-center md:px-10">
+        <div class="flex-shrink-0 w-28 md:w-36">
+            <img src="./assets/aboutIcon1.svg" class="w-full" alt="">
+        </div>
+        <div class="p-4 text-center sm:text-left">
+            <h3 class="text-[28px] sm:text-[30px] font-semibold">Caring and compassionate</h3>
+            <p class="text-[22px] sm:text-[24px]">We are committed to making all patients feel welcome, respected and cared for.</p>
+        </div>
+    </div>
+</section>
+
+    <!--  -->
+     <footer class="bg-[#035c8a] text-white flex flex-col place-items-center gap-4 py-8">
+        <div >
+           <a href="index.html"> <img src="./assets/footer-logo.svg" class="w-[6rem] hover:scale-110 transition-all duration-200" alt=""></a>
+        </div>
+        <p class="text-[18px]"><span>&copy;</span> 2024 
+All Rights Reserved</p>
+<ul class="flex flex-wrap gap-2  sm:gap-4 place-items-center justify-center ">
+    <li class=" text-[16px] relative group break-all"><a href="#">ValleyCare Eye Docs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Privacy Policy</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Developed by Indigo Web</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+</ul>
+     </footer>
+
+       <script src="./app.js"></script>
+</body>
+</html>

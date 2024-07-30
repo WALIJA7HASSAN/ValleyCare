@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body  style="font-family: 'Barlow', sans-serif;">
+ <nav class="sm:hidden fixed top-0 w-full z-30 bg-white">
+    <div class="text-right text-2xl p-4 flex items-center justify-between">
+        <i id="menu-icon" class="fa-solid fa-bars hover:text-blue-400 cursor-pointer"></i>
+        <img id="nav-logo" src="./assets/valleyCareLogo.png" class="h-8" alt="logo">
+        <i id="nav-phone" class="fa-solid fa-phone"></i>
+    </div>
+    <div id="menu" class="fixed inset-0 bg-white hidden flex flex-col justify-between">
+        <div class="flex justify-between items-center p-4">
+            <i id="close-menu" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col items-center justify-center gap-8 px-4 py-2 flex-grow min-h-[67%]">
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] text-blue-400 relative group"><a href="faq.html">FAQs</a>
+                <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+        <div class="bg-gray-200 text-[22px] p-4 text-center md:text-right">
+            <ul>
+                <li class="text-blue-500 hover:text-blue-400 transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   <header class="hidden relative container   bg-white/95 py-4 px-8 sm:flex flex-wrap md:align-items-center  md:justify-between place-items-center justify-center mx-auto mt-20 sm:mt-0">
+        <div class="bg-[url('./assets/icon.png')] bg-cover bg-center absolute top-0 right-0 h-full w-full -z-20"></div>
+        <div class="w-56 md:w-80">
+            <img class="w-full" src="./assets/valleyCareLogo.png" alt="logo">
+        </div>
+        <div class=" text-[22px]">
+            <ul class=" text-center md:text-right ">
+                <li class="text-blue-500 hover:text-blue-400  transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                 <li class=" hover:text-blue-400  transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                 <li class=" hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <nav class=" sticky top-0 py-4 shadow-t shadow-b bg-white shadow-md hidden sm:block z-50">
+        <ul class="flex flex-wrap align-items-center justify-center gap-8 mx-4">
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] text-blue-400 relative group"><a href="faq.html">FAQs</a>
+            <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+    </nav>
+    <!--  -->
+    <section class=" mt-14 sm:mt-0 text-center bg-gray-200 h-[143px] grid place-items-center">
+        <h4 class="text-[36px] font-semibold ">FOR PATIENTS</h4>
+    </section>
+    <aside class="faq-content">
+       <p> It’s normal to have questions about visiting our eye specialist clinic, so we’ve put together a list of our most common patient queries. Of course, if your question isn’t here, please contact our rooms directly on <span>03 5176 4994</span> or you can email us at <span>admin@vced.com.au</span></p>
+    </aside>
+    <!-- faqs -->
+<div id="qfaq1" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">What do I need to bring to my first appointment?</p>
+        <span id="faq1-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq1" class="faq">
+    <p>Please bring the following to your first appointment with us:</p>
+    <p>&nbsp;</p>
+    <ul>
+        <li>Referral</li>
+        <li>Medicare card</li>
+        <li>Pension card, concession card, private health fund card or Vet Affairs card</li>
+        <li><span>Patient registration form</span> which can be downloaded and completed before your appointment</li>
+        <li>List of medical problems and current medications</li>
+        <li>Payment card or cash</li>
+        <li>Glasses</li>
+        <li>Sunglasses</li>
+    </ul>
+</aside>
+
+<!-- 2 -->
+<div id="qfaq2" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">How long will my appointment take?</p>
+        <span id="faq2-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq2" class="faq">
+    <p>Your appointment will usually take between 1.5 and 2 hours, so please allow plenty of time.</p>
+    <p>&nbsp;</p>
+    <p>Sometimes we need to fit in urgent appointments for those who need immediate attention. This may result in others waiting longer for their appointments. We appreciate your understanding in this matter.</p>
+</aside>
+
+<!-- 3 -->
+<div id="qfaq3" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">What will happen at my appointment?</p>
+        <span id="faq3-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq3" class="faq">
+    <p>When you arrive, please check in with reception.</p>
+    <p>&nbsp;</p>
+    <p>An assistant to our eye doctors will see you first and check your eyesight and conduct some initial tests. You may have drops put in your eyes in preparation for your examination by the eye specialist.</p>
+    <p>&nbsp;</p>
+    <p>Some eye drops make your pupils bigger so we can thoroughly check the back of your eyes. These may cause blurred close vision and light sensitivity for 2-3 hours. Wearing sunglasses will help you manage the glare.</p>
+</aside>
+
+<!-- 4 -->
+<div id="qfaq4" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">Can I drive after my appointment?</p>
+        <span id="faq4-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq4" class="faq">
+    <p>It depends on what happens at your appointment. If you have any of the following procedures done, for your safety we recommend that someone else drives you home:</p>
+    <p>&nbsp;</p>
+    <ul>
+        <li>drops to dilate your pupils (you will be sensitive to light and will have blurred close vision)</li>
+        <li>injections or laser treatment (you may experience discomfort and watery eyes that may distort your vision)</li>
+        <li>after surgery</li>
+    </ul>
+</aside>
+
+<!-- 5 -->
+<div id="qfaq5" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">What are your fees?</p>
+        <span id="faq5-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq5" class="faq">
+    <p>We can provide an estimate of fees before your appointment.</p>
+    <p>&nbsp;</p>
+    <p>Any additional tests and procedures that may be requested by the eye specialist on the day of your appointment may cost extra. Wherever possible, we will make you aware of the costs involved, before proceeding.</p>
+    <p>&nbsp;</p>
+    <p>We are a private billing clinic and payment is required on the day of your consultation.</p>
+    <p>&nbsp;</p>
+    <p>Payment can be made by cash, personal cheque, EFTPOS or credit card (Mastercard or Visa).</p>
+    <p>&nbsp;</p>
+    <p>Any Medicare rebates will be processed on the day and on-site.</p>
+    <p>&nbsp;</p>
+    <p>We do not routinely bulk bill patients. However, we do offer discounted rates for pension and concession cardholders.</p>
+</aside>
+
+<!-- 6 -->
+<div id="qfaq6" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">Where can I park?</p>
+        <span id="faq6-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq6" class="faq">
+    <p>There is some parking at the front of the clinic, and ample parking in the side streets close by in Garden Grove and Lafayette Street.</p>
+    <p>&nbsp;</p>
+</aside>
+
+<!-- 7 -->
+<div id="qfaq7" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">What should I do in an emergency?</p>
+        <span id="faq7-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq7" class="faq">
+    <p>In the event of an emergency when our clinic is not open (either after hours or on public holidays), please contact:</p>
+    <p>&nbsp;</p>
+    <ul>
+        <li>Your local optometrist</li>
+        <li>Monash Medical Centre Clayton Emergency Department on <span>03 9594 6666</span> (<span>monashhealth.org/contact/monash-medical-centre</span>)</li>
+        <li>The Royal Victorian Eye and Ear Hospital on <span>03 9929 8666</span> They have a 24-hour walk-in Emergency Department (<span>eyeandear.org.au/page/Patients/Coming_to_the_Eye_and_Ear/Presenting_at_Emergency</span>)</li>
+    </ul>
+</aside>
+
+<!-- 8 -->
+<div id="qfaq8" class="container mx-auto text-[24px] sm:text-[26px]">
+    <div class="flex justify-between items-center px-10 py-2 bg-gray-200 mx-2 md:mx-6 my-2 sm:py-4">
+        <p class="text-[22px] sm:text-[24px]">What is your COVID-19 policy?</p>
+        <span id="faq8-toggle" class="bg-blue-500 px-4 py-3 rounded-full inline-flex md:flex-shrink-0 cursor-pointer">
+            <img src="./assets/faq-icon.svg" class="w-4" alt="">
+        </span>
+    </div>
+</div>
+<aside id="faq8" class="faq">
+    <p>You must ring the office (do not come to the practice) before your appointment to reschedule if you have:</p>
+    <p>&nbsp;</p>
+    <ul>
+        <li>returned from a COVID exposure site in the last 14 days prior to your appointment</li>
+        <li>had contact with a suspected or confirmed COVID–19 case</li>
+        <li>recently returned from overseas or has been asked to self-isolate</li>
+        <li>visits to quarantine hotels</li>
+        <li>any of the following symptoms: fever, cough or shortness of breath, conjunctivitis or loss of smell (or taste).</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>You need to wear a mask for your appointment.</p>
+    <p>&nbsp;</p>
+    <p>We kindly ask all carers and drivers to wait in the car.</p>
+    <p>&nbsp;</p>
+    <p>If you arrive early for your appointment, please wait in the car until 10 minutes before your appointment time.</p>
+    <p>&nbsp;</p>
+    <i>We appreciate your cooperation in these matters as your safety and wellbeing, along with our team’s, is important.</i>
+    <p>&nbsp;</p>
+    <p>To ensure everyone’s safety during the pandemic, we screen all patients and visitors for COVID–19 symptoms. Your temperature may be checked at the door and you will be asked questions about any possible COVID–19 symptoms. You will be required to sanitise your hands on entering and leaving the practice. We practise social distancing in the waiting room and clean all equipment in between each patient.</p>
+</aside>
+
+    <!--  -->
+
+    <!--  -->
+
+    <footer class="bg-[#035c8a] text-white flex flex-col place-items-center gap-4 py-8">
+        <div >
+           <a href="index.html"> <img src="./assets/footer-logo.svg" class="w-[6rem] hover:scale-110 transition-all duration-200" alt=""></a>
+        </div>
+        <p class="text-[18px]"><span>&copy;</span> 2024 
+All Rights Reserved</p>
+<ul class="flex flex-wrap gap-2  sm:gap-4 place-items-center justify-center ">
+    <li class=" text-[16px] relative group break-all"><a href="#">ValleyCare Eye Docs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Privacy Policy</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Developed by Indigo Web</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+</ul>
+     </footer>
+
+       <script src="./app.js"></script>
+</body>
+</html>

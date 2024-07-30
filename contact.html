@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body  style="font-family: 'Barlow', sans-serif;">
+     <nav class="sm:hidden fixed top-0 w-full z-30 bg-white">
+    <div class="text-right text-2xl p-4 flex items-center justify-between">
+        <i id="menu-icon" class="fa-solid fa-bars hover:text-blue-400 cursor-pointer"></i>
+        <img id="nav-logo" src="./assets/valleyCareLogo.png" class="h-8" alt="logo">
+        <i id="nav-phone" class="fa-solid fa-phone"></i>
+    </div>
+    <div id="menu" class="fixed inset-0 bg-white hidden flex flex-col justify-between">
+        <div class="flex justify-between items-center p-4">
+            <i id="close-menu" class="fa-solid fa-xmark text-2xl cursor-pointer"></i>
+        </div>
+        <ul class="flex flex-col items-center justify-center gap-8 px-4 py-2 flex-grow min-h-[67%]">
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+                <span class="w-0 hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class="w-fit text-[28px] text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+                <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+        <div class="bg-gray-200 text-[22px] p-4 text-center md:text-right">
+            <ul>
+                <li class="text-blue-500 hover:text-blue-400 transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                <li class="hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   <header class="hidden relative container   bg-white/95 py-4 px-8 sm:flex flex-wrap md:align-items-center  md:justify-between place-items-center justify-center mx-auto mt-20 sm:mt-0">
+        <div class="bg-[url('./assets/icon.png')] bg-cover bg-center absolute top-0 right-0 h-full w-full -z-20"></div>
+        <div class="w-56 md:w-80">
+            <img class="w-full" src="./assets/valleyCareLogo.png" alt="logo">
+        </div>
+        <div class=" text-[22px]">
+            <ul class=" text-center md:text-right ">
+                <li class="text-blue-500 hover:text-blue-400  transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+                <li>F: 03 5176 4997</li>
+                 <li class=" hover:text-blue-400  transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+                 <li class=" hover:text-blue-400 transition-all duration-200"><a href="#">146 Princes Hwy, Traralgon VIC 3844</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <nav class="z-50 sticky top-0 py-4 shadow-t shadow-b bg-white shadow-md hidden sm:block ">
+        <ul class="flex flex-wrap align-items-center justify-center gap-8 mx-4">
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="index.html">HOME</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="about.html">ABOUT</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="faq.html">FAQs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="doctors.html">DOCTORS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] hover:text-blue-400 relative group"><a href="referers.html">REFERERS</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+            <li class=" text-[20px] text-blue-400 relative group"><a href="contact.html">CONTACT</a>
+            <span class="w-full h-[2px] bg-blue-400 absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+            </li>
+        </ul>
+    </nav>
+
+    <!--  -->
+ <section class="mt-10 sm:mt-3 container mx-auto flex flex-col md:flex-row gap-2 p-1 sm:p-4 items-stretch">
+    <div class="location flex-1 flex items-center justify-center p-4 sm:p-2 order-2 md:order-1">
+        <div class="mapouter w-full">
+            <div class="gmap_canvas">
+                <iframe src="https://maps.google.com/maps?q=146%20Princes%20St,%20Traralgon%20VIC%203844,%20Australia&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 100%; height: 100%;"></iframe>
+            </div>
+            <style>
+                .mapouter {
+                    position: relative;
+                    height: 100%; /* Adjust height as needed */
+                    width: 100%;
+                    background: #fff;
+                }
+                .gmap_canvas {
+                    height: 100%;
+                    width: 100%;
+                }
+                iframe {
+                    height: 100%;
+                    width: 100%;
+                }
+            </style>
+        </div>
+    </div>
+    <div class="text-[22px] p-4 sm:p-2 flex-1 flex flex-col justify-center order-1 md:order-2">
+        <h4 class="font-semibold text-[30px] mb-2">Our location</h4>
+        <p class="hover:text-blue-500 transition-all duration-200">146 Princes Hwy, Traralgon VIC 3844</p>
+        
+        <h4 class="font-semibold text-[30px] mt-4 mb-2">Our hours</h4>
+        <p>Monday Closed</p>
+        <p>Tue - Fri 9:00 am - 5:00 pm</p>
+        <p>Sat - Sun Closed</p>
+        
+        <h4 class="font-semibold text-[30px] mt-4 mb-2">For appointments</h4>
+        <ul>
+            <li class="text-blue-500 hover:text-blue-400 transition-all duration-200"><a href="#">P: 03 5176 4994</a></li>
+            <li>F: 03 5176 4997</li>
+            <li class="hover:text-blue-400 transition-all duration-200"><a href="#">E: admin@vced.com.au</a></li>
+        </ul>
+        
+        <h4 class="font-semibold text-[30px] mt-4 mb-2">Send us a message</h4>
+        <!-- form -->
+        <form class="grid gap-5 sm:grid-cols-1 my-8 text-left">
+            <div class="max-w-full w-full">
+                <label for="first-name" class="block text-[24px]">First Name</label>
+                <input type="text" id="first-name" name="first-name" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="Enter first name" required>
+            </div>
+            <div class="max-w-full w-full">
+                <label for="last-name" class="block text-[24px]">Last Name</label>
+                <input type="text" id="last-name" name="last-name" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="Enter last name" required>
+            </div>
+            <div class="max-w-full w-full">
+                <label for="phone" class="block text-[24px]">Phone</label>
+                <input type="text" id="phone" name="phone" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="Enter phone number" required>
+            </div>
+            <div class="max-w-full w-full">
+                <label for="email" class="block text-[24px]">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="Enter email" required>
+            </div>
+            <div class="max-w-full w-full">
+                <label for="dob" class="block text-[24px]">Date of Birth</label>
+                <input type="date" id="dob" name="dob" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="max-w-full w-full">
+                <label for="subject" class="block text-[24px]">Subject</label>
+                <select id="subject" name="subject" class="mt-1 block w-full bg-gray-200 text-[20px] p-2">
+                    <option value="" disabled selected>Select subject</option>
+                    <option value="appointment">Book an appointment</option>
+                    <option value="emergency">Emergency consult</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="max-w-full w-full">
+                <label for="message" class="block text-[24px]">Message</label>
+                <textarea id="message" name="message" class="mt-1 block w-full bg-gray-200 text-[20px] p-2" placeholder="Enter your message" required></textarea>
+            </div>
+            <div class="max-w-full w-full">
+                <button type="submit" class="w-full bg-blue-500 text-white text-[20px] p-2 mt-4 px-14">Send</button>
+            </div>
+        </form>
+        <!-- end of form -->
+    </div>
+</section>
+
+
+
+
+
+
+    <!--  -->
+
+
+    <footer class="bg-[#035c8a] text-white flex flex-col place-items-center gap-4 py-8">
+        <div >
+           <a href="index.html"> <img src="./assets/footer-logo.svg" class="w-[6rem] hover:scale-110 transition-all duration-200" alt=""></a>
+        </div>
+        <p class="text-[18px]"><span>&copy;</span> 2024 
+All Rights Reserved</p>
+<ul class="flex flex-wrap gap-2  sm:gap-4 place-items-center justify-center ">
+    <li class=" text-[16px] relative group break-all"><a href="#">ValleyCare Eye Docs</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Privacy Policy</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+    <li class=" text-[16px] relative group break-all"><a href="#">Developed by Indigo Web</a>
+            <span class="w-0 group-hover:w-full h-[2px] bg-white absolute bottom-0 left-0 mt-2 transition-all duration-200"></span>
+    </li>
+</ul>
+     </footer>
+
+       <script src="./app.js"></script>
+</body>
+</html>
