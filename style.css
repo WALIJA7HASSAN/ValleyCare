@@ -1,6 +1,6 @@
 
 .container{
-    max-width: 1100px !important;
+    max-width: 1130px !important;
 }
 .home-content{
     background-color: #f2f2f2;
@@ -41,7 +41,7 @@ padding: 3rem 2rem;
 .about-content p{
     font-size: 18px;
     padding: 1rem;
-    max-width: 1100px;
+    max-width: 1130px;
     margin: 0 auto;
 }
 
@@ -178,7 +178,7 @@ font-size: 18px;
      display: grid;
      justify-self: center;
        font-size: 24px;
-       max-width: 1100px;
+       max-width: 1130px;
        margin: 0 auto;
 }
 .home-content{
@@ -218,7 +218,7 @@ font-size: 18px;
 @media (min-width: 1280px) {
   
     .about-content p,.faq-content ,.faq,.refer-content{
-        max-width: 1100px;
+        max-width: 1130px;
 
     }
 }
@@ -227,7 +227,7 @@ font-size: 18px;
         margin-inline: auto;
     }
     .about-content p,.faq-content ,.faq,.refer-content{
-        max-width: 1100px;
+        max-width: 1130px;
     }
 }
 
