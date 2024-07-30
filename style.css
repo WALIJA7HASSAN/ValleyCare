@@ -58,44 +58,21 @@ font-size: 18px;
     margin: 0 auto !important; 
     padding: 0 1rem !important; 
     background: white;
-    opacity: 0;
+  
     max-height: 0;
     overflow: hidden;
     transition:  max-height 0.5s ease;
 }
 
 .faq-display {
-    opacity: 1;
+    
     max-height: 1000px; 
     transition:  max-height 0.5s ease;
-    /* padding: 3rem !important;  */
     margin: 0rem auto !important;
 }
 
 
- /* .faq {
-    font-size: 18px;
-    background: white;
-    opacity: 0;
-  
-    overflow: hidden;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-    margin: -1000px;
-    position: absolute;
-    top: -1000px;
 
-    
-} */
-
-/* .faq-display {
-    position: static;
-    top: 0;
-    opacity: 1;
-    overflow: visible;
-    margin: 0 1rem;
-    padding: 1rem;
-    transition: opacity 0.5s ease, max-height 0.5s ease;
-} */
 
 .faq ul{
     list-style: disc !important;
