@@ -35,27 +35,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+// faq
 
   document.addEventListener('DOMContentLoaded', function() {
     // Function to add the event listener
     function toggleFAQ(id) {
-      var toggle = document.getElementById(id + '-toggle');
-      var content = document.getElementById(id);
+      var container = document.getElementById(id);
+      var toggle = container.querySelector('.faq-toggle');
+      var content = container.nextElementSibling;
 
-      toggle.addEventListener('click', function() {
+      container.addEventListener('click', function() {
         content.classList.toggle('faq-display');
         toggle.classList.toggle('rotate-180');
       });
     }
 
     // List of FAQ IDs
-    var faqIDs = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8'];
+    var faqIDs = ['qfaq1', 'qfaq2', 'qfaq3', 'qfaq4', 'qfaq5', 'qfaq6', 'qfaq7', 'qfaq8'];
 
-    // Add event listeners to all FAQ toggles
+    // Add event listeners to all FAQ containers
     faqIDs.forEach(function(id) {
       toggleFAQ(id);
     });
   });
+
+
+  // document.addEventListener('DOMContentLoaded', function() {
+  //   // Function to add the event listener
+  //   function toggleFAQ(id) {
+  //     var toggle = document.getElementById(id + '-toggle');
+  //     var content = document.getElementById(id);
+
+  //     toggle.addEventListener('click', function() {
+  //       content.classList.toggle('faq-display');
+  //       toggle.classList.toggle('rotate-180');
+  //     });
+  //   }
+
+  //   // List of FAQ IDs
+  //   var faqIDs = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8'];
+
+  //   // Add event listeners to all FAQ toggles
+  //   faqIDs.forEach(function(id) {
+  //     toggleFAQ(id);
+  //   });
+  // });
+
 
 //   doctor
 
