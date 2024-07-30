@@ -37,27 +37,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // faq
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Function to add the event listener
-    function toggleFAQ(id) {
-      var container = document.getElementById(id);
-      var toggle = container.querySelector('.faq-toggle');
-      var content = container.nextElementSibling;
+document.addEventListener('DOMContentLoaded', function () {
+  // Function to add the event listener
+  function toggleFAQ(id, toggleId) {
+    var container = document.getElementById(id)
+    var toggle = document.getElementById(toggleId)
+    var content = container.nextElementSibling
 
-      container.addEventListener('click', function() {
-        content.classList.toggle('faq-display');
-        toggle.classList.toggle('rotate-180');
-      });
-    }
+    container.addEventListener('click', function () {
+      content.classList.toggle('faq-display')
+      
+      toggle.classList.toggle('rotate-180')
+       toggle.classList.toggle('transition-transform')
+       toggle.classList.toggle('duration-300')
+    })
+  }
 
-    // List of FAQ IDs
-    var faqIDs = ['qfaq1', 'qfaq2', 'qfaq3', 'qfaq4', 'qfaq5', 'qfaq6', 'qfaq7', 'qfaq8'];
+  // List of FAQ IDs and their corresponding toggle IDs
+  var faqs = [
+    { id: 'qfaq1', toggleId: 'faq1-toggle' },
+    { id: 'qfaq2', toggleId: 'faq2-toggle' },
+    { id: 'qfaq3', toggleId: 'faq3-toggle' },
+    { id: 'qfaq4', toggleId: 'faq4-toggle' },
+    { id: 'qfaq5', toggleId: 'faq5-toggle' },
+    { id: 'qfaq6', toggleId: 'faq6-toggle' },
+    { id: 'qfaq7', toggleId: 'faq7-toggle' },
+    { id: 'qfaq8', toggleId: 'faq8-toggle' },
+  ]
 
-    // Add event listeners to all FAQ containers
-    faqIDs.forEach(function(id) {
-      toggleFAQ(id);
-    });
-  });
+  // Add event listeners to all FAQ containers
+  faqs.forEach(function (faq) {
+    toggleFAQ(faq.id, faq.toggleId)
+  })
+})
+
 
 
   // document.addEventListener('DOMContentLoaded', function() {
@@ -120,6 +133,30 @@ buttons.forEach(button => {
     });
 });
 
+// back to top
+document.addEventListener('DOMContentLoaded', function () {
+  const backToTopBtn = document.getElementById('backToTopBtn')
+
+  // Show the button when scrolling down 20px from the top
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 20) {
+      backToTopBtn.classList.remove('sm:hidden')
+      backToTopBtn.classList.add('scale-100')
+    } else {
+      backToTopBtn.classList.add('sm:hidden')
+      backToTopBtn.classList.remove('scale-100')
+    }
+  })
+
+  // Scroll to top when the button is clicked
+  backToTopBtn.addEventListener('click', function (event) {
+    event.preventDefault() // Prevent the default anchor behavior
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  })
+})
 
 
 
