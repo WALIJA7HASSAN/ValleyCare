@@ -73,26 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   // Function to add the event listener
-  //   function toggleFAQ(id) {
-  //     var toggle = document.getElementById(id + '-toggle');
-  //     var content = document.getElementById(id);
-
-  //     toggle.addEventListener('click', function() {
-  //       content.classList.toggle('faq-display');
-  //       toggle.classList.toggle('rotate-180');
-  //     });
-  //   }
-
-  //   // List of FAQ IDs
-  //   var faqIDs = ['faq1', 'faq2', 'faq3', 'faq4', 'faq5', 'faq6', 'faq7', 'faq8'];
-
-  //   // Add event listeners to all FAQ toggles
-  //   faqIDs.forEach(function(id) {
-  //     toggleFAQ(id);
-  //   });
-  // });
+  
 
 
 //   doctor
