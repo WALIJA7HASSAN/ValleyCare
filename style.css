@@ -1,6 +1,6 @@
 
 .container{
-    max-width: 1130px !important;
+    max-width: 1170px !important;
 }
 .home-content{
     background-color: #f2f2f2;
@@ -41,13 +41,13 @@ padding: 3rem 2rem;
 .about-content p{
     font-size: 18px;
     padding: 1rem;
-    max-width: 1130px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 .faq-content{
 margin: 0 auto;
-font-size: 18px;
+font-size: 20px;
  line-height: 24px;
 }
  .faq-content p{
@@ -55,11 +55,11 @@ font-size: 18px;
 }
 .faq-content span{
     text-decoration: underline;
-    color: #3B82F6;
+    color: #035c8a;
 }
 
 .faq {
-    font-size: 14px;
+    font-size: 18px;
     margin: 0 auto !important; 
     padding: 0 1rem !important; 
     background: white;
@@ -86,7 +86,7 @@ font-size: 18px;
 }
 .faq span{
     text-decoration: underline;
-     color: #3B82F6;
+     color: #035c8a;
 }
 
 .modal{
@@ -135,10 +135,12 @@ font-size: 18px;
 }
 .refer-content span{
     text-decoration: underline;
-    color: #3B82F6;
+    color:  #035c8a;
 }
 .refer-content h6{
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.2;
+   
 }
 
 
@@ -178,7 +180,7 @@ font-size: 18px;
      display: grid;
      justify-self: center;
        font-size: 24px;
-       max-width: 1100px;
+       max-width: 1140px;
        margin: 0 auto;
 }
 .home-content{
@@ -205,7 +207,8 @@ font-size: 18px;
 
 }
 .refer-content h6{
-    font-size: 18px;
+    font-size: 17px;
+    
 }
 .faq{
     margin: 0 auto;
@@ -218,7 +221,7 @@ font-size: 18px;
 @media (min-width: 1280px) {
   
     .about-content p,.faq-content ,.faq,.refer-content{
-        max-width: 1130px;
+        max-width: 1170px;
 
     }
 }
@@ -227,7 +230,7 @@ font-size: 18px;
         margin-inline: auto;
     }
     .about-content p,.faq-content ,.faq,.refer-content{
-        max-width: 1130px;
+        max-width: 1170px;
     }
 }
 

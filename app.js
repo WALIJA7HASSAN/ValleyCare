@@ -139,6 +139,13 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+// referers
+document.getElementById('upload-link')
+  .addEventListener('click', function (event) {
+    event.preventDefault()
+    document.getElementById('supporting-documents').click()
+  })
 
+  
 
 
