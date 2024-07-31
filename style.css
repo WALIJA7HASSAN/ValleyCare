@@ -53,7 +53,7 @@ font-size: 20px;
  .faq-content p{
     padding: 1rem;
 }
-.faq-content span{
+.faq-content a{
     text-decoration: underline;
     color: #035c8a;
 }
@@ -84,9 +84,10 @@ font-size: 20px;
     padding: 1rem;
     margin: 0 1rem;
 }
-.faq span{
+.faq a{
     text-decoration: underline;
      color: #035c8a;
+     word-break: break-all;
 }
 
 .modal{
@@ -133,7 +134,7 @@ font-size: 20px;
     padding: 1rem;
     margin: 1rem auto;
 }
-.refer-content span{
+.refer-content a{
     text-decoration: underline;
     color:  #035c8a;
 }
